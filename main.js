@@ -1,0 +1,1 @@
+const copy=document.querySelector('#copy');if(copy)copy.addEventListener('click',async()=>{const status=document.querySelector('#status');try{await navigator.clipboard.writeText('Arizys');status.textContent='已复制微信号 Arizys，期待你的招呼！';}catch{status.textContent='微信号：Arizys，请长按或选中文字复制。';}});
